@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Игорь</title>
+</head>
+<body>
+    <!-- Блок header -->
+    <header class="header">
+        <h1 class="header__title">Контакты</h1>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="index.html" class="header__menu-link">Главная</a></li>
+                <li class="header__menu-item"><a href="about.html" class="header__menu-link">Обо мне</a></li>
+                <li class="header__menu-item"><a href="contacts.html" class="header__menu-link">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Блок main -->
+    <main class="main-content">
+        <section class="contact">
+            <h2 class="contact__title">Связаться со мной</h2>
+
+            <!-- Контактная информация -->
+            <section class="contact-info">
+                <h3 class="contact-info__title">Мои контакты</h3>
+                <ul class="contact-info__list">
+                    <li class="contact-info__item"><strong>Email:</strong> <a href="mailto:email@example.com" class="contact-info__link">email@example.com</a></li>
+                    <li class="contact-info__item"><strong>Телефон:</strong> <a href="tel:+1234567890" class="contact-info__link">+1 234 567 890</a></li>
+                    <li class="contact-info__item"><strong>Адрес:</strong> г. Москва, Россия</li>
+                </ul>
+            </section>
+
+            <!-- Форма обратной связи -->
+            <section class="contact-form">
+                <h3 class="contact-form__title">Форма обратной связи</h3>
+                <form action="mailto:email@example.com" method="post" enctype="text/plain" class="contact-form__form">
+                    <label for="name" class="contact-form__label">Имя:</label>
+                    <input type="text" id="name" name="name" class="contact-form__input" required>
+                    
+                    <label for="email" class="contact-form__label">Email:</label>
+                    <input type="email" id="email" name="email" class="contact-form__input" required>
+                    
+                    <label for="message" class="contact-form__label">Сообщение:</label>
+                    <textarea id="message" name="message" class="contact-form__textarea" rows="5" required></textarea>
+                    
+                    <button type="submit" class="contact-form__button">Отправить</button>
+                </form>
+            </section>
+
+            <!-- Карта -->
+            <section class="contact-map">
+                <h3 class="contact-map__title">Мое местоположение</h3>
+                <div class="contact-map__container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509202!2d144.95373631531697!3d-37.81627967975153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5779e7c7c6bdf!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1619913996094!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- Блок footer -->
+    <footer class="footer">
+        <p class="footer__text">© 2024 Игорь. Все права защищены.</p>
+        <p><a href="index.html" class="footer__link">Главная</a> | <a href="about.html" class="footer__link">Обо мне</a> | <a href="contacts.html" class="footer__link">Контакты</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб-страница по БЭМ</title>
+</head>
+<body>
+    <!-- Блок header -->
+    <header class="header">
+        <h1 class="header__title">Добро пожаловать на мою страницу!</h1>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="about.html" class="header__menu-link">Обо мне</a></li>
+                <li class="header__menu-item"><a href="#projects" class="header__menu-link">Проекты</a></li>
+                <li class="header__menu-item"><a href="contact.html" class="header__menu-link">Контакты</a></li>
+            </ul>
+        </nav>
+        <!-- Картинка в header -->
+        <figure class="header__image">
+            <img src="https://via.placeholder.com/800x200" alt="Пример изображения" class="header__img">
+            <figcaption class="header__caption">Пример изображения в заголовке</figcaption>
+        </figure>
+    </header>
+
+    <!-- Блок main -->
+    <main class="main-content">
+        <!-- Блок about -->
+        <section class="about" id="about">
+            <h2 class="about__title">Обо мне</h2>
+            <p class="about__text">Меня зовут <strong>Алексей</strong>, я <em>веб-разработчик</em>. Моя цель — создавать удобные и функциональные веб-приложения.</p>
+            <p class="about__text">Я специализируюсь на фронтенд-разработке и использую современные технологии для создания динамичных интерфейсов.</p>
+
+            <!-- Цитата -->
+            <blockquote class="about__quote">
+                <p>“Выберите себе работу по душе, и вам не придется работать ни одного дня в своей жизни.”</p>
+                <cite>— Конфуций</cite>
+            </blockquote>
+
+            <!-- Таблица с навыками -->
+            <table class="about__table">
+                <caption>Основные навыки</caption>
+                <thead>
+                    <tr>
+                        <th>Навык</th>
+                        <th>Уровень владения</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML/CSS</td>
+                        <td>Эксперт</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Продвинутый</td>
+                    </tr>
+                    <tr>
+                        <td>React</td>
+                        <td>Средний</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Блок projects -->
+        <section class="projects" id="projects">
+            <h2 class="projects__title">Проекты</h2>
+            <ul class="projects__list">
+                <li class="projects__item">
+                    <h3 class="projects__item-title">Проект 1</h3>
+                    <p class="projects__item-description">Описание проекта 1.</p>
+                    <!-- Код -->
+                    <pre class="projects__item-code">
+                        <code>&lt;div&gt;Пример кода&lt;/div&gt;</code>
+                    </pre>
+                </li>
+                <li class="projects__item">
+                    <h3 class="projects__item-title">Проект 2</h3>
+                    <p class="projects__item-description">Описание проекта 2.</p>
+                    <!-- Упорядоченный список -->
+                    <ol class="projects__item-steps">
+                        <li>Сделать исследование</li>
+                        <li>Создать прототип</li>
+                        <li>Реализовать проект</li>
+                    </ol>
+                </li>
+                <li class="projects__item">
+                    <h3 class="projects__item-title">Проект 3</h3>
+                    <p class="projects__item-description">Описание проекта 3.</p>
+                    <!-- Несортированный список -->
+                    <ul class="projects__item-technologies">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Блок contact -->
+        <section class="contact" id="contact">
+            <h2 class="contact__title">Контакты</h2>
+            <p class="contact__text">Вы можете связаться со мной по электронной почте: <a href="mailto:email@example.com" class="contact__link">email@example.com</a></p>
+            <p class="contact__text">Также найдите меня в социальных сетях:</p>
+            <!-- Ссылки на социальные сети -->
+            <ul class="contact__socials">
+                <li class="contact__social-item"><a href="https://twitter.com" target="_blank" class="contact__social-link">Twitter</a></li>
+                <li class="contact__social-item"><a href="https://linkedin.com" target="_blank" class="contact__social-link">LinkedIn</a></li>
+                <li class="contact__social-item"><a href="https://github.com" target="_blank" class="contact__social-link">GitHub</a></li>
+            </ul>
+
+            <!-- Встраивание карты -->
+            <div class="contact__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509202!2d144.95373631531697!3d-37.81627967975153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5779e7c7c6bdf!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1619913996094!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Блок footer -->
+    <footer class="footer">
+        <p class="footer__text">© 2024 Алексей. Все права защищены.</p>
+        <!-- Ссылка наверх страницы -->
+        <p><a href="#top" class="footer__link">Наверх</a></p>
+    </footer>
+</body>
+</html>
